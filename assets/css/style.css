@@ -1,0 +1,1289 @@
+/* -------------------- */
+/* RESET */
+/* -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* -------------------- */
+/* NAVBAR */
+/* -------------------- */
+
+
+header {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 100;
+}
+
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #111111;
+}
+
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+
+.menu a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #111111;
+    transition: opacity .3s ease;
+}
+
+
+.menu a:hover {
+    opacity: .65;
+}
+
+
+
+/* -------------------- */
+/* HERO */
+/* -------------------- */
+
+
+.hero {
+
+    max-width: 1400px;
+    margin: 70px auto 120px;
+    padding: 0 60px;
+
+}
+
+
+.hero p {
+
+    font-size:16px;
+    line-height:1.8;
+    max-width:560px;
+    font-weight:400;
+
+}
+
+
+
+/* -------------------- */
+/* SELECTED WORK */
+/* -------------------- */
+
+
+.selected-work {
+
+    max-width: 1400px;
+    margin: 0 auto 150px;
+    padding: 0 60px;
+
+}
+
+
+
+.selected-work h2 {
+
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+/* -------------------- */
+/* PROJECT GRID */
+/* -------------------- */
+
+
+.projects-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px 40px;
+
+}
+
+
+
+.project {
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+
+/* -------------------- */
+/* IMAGES */
+/* -------------------- */
+
+
+.placeholder {
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: transparent;
+
+}
+
+
+.placeholder img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+.project:hover img {
+
+    transform: scale(1.02);
+
+}
+
+
+
+/* -------------------- */
+/* PROJECT TITLES */
+/* -------------------- */
+
+
+.project h3 {
+
+    margin-top: 18px;
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+
+@media (max-width: 800px) {
+
+
+    nav {
+
+        padding: 25px 25px;
+
+    }
+
+
+    .menu {
+
+        gap: 20px;
+
+    }
+
+
+    .hero {
+
+        padding: 0 25px;
+        margin-top: 50px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .selected-work {
+
+        padding: 0 25px;
+
+    }
+
+
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+    }
+
+
+}
+/* -------------------- */
+/* ABOUT */
+/* -------------------- */
+
+.about-page{
+
+    max-width:900px;
+    margin:70px auto 120px;
+    padding:0 60px;
+
+}
+
+.about-intro{
+
+    margin-bottom:90px;
+
+}
+
+.about-intro h1{
+
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-weight:500;
+    margin-bottom:35px;
+
+}
+
+.about-intro p{
+
+    font-size:16px;
+    line-height:1.8;
+    max-width:680px;
+    color:#444;
+
+}
+
+.about-section{
+
+    margin-bottom:80px;
+
+}
+
+.about-section h2{
+
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:35px;
+
+}
+
+.item{
+
+    margin-bottom:45px;
+
+}
+
+.item h3{
+
+    font-size:17px;
+    font-weight:500;
+    margin-bottom:10px;
+
+}
+
+.item p{
+
+    font-size:16px;
+    line-height:1.7;
+    color:#555;
+
+}
+
+.skills-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:60px;
+
+}
+
+.skills-grid h3{
+
+    font-size:16px;
+    margin-bottom:18px;
+
+}
+
+.skills-grid ul{
+
+    list-style:none;
+
+}
+
+.skills-grid li{
+
+    margin-bottom:12px;
+    color:#555;
+
+}
+
+.menu .active{
+
+    font-weight:600;
+
+}
+
+@media(max-width:800px){
+
+.about-page{
+
+padding:0 25px;
+
+}
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.about-intro p{
+
+font-size:18px;
+
+}
+
+}
+/* -------------------- */
+/* CONTACT */
+/* -------------------- */
+
+.contact-page{
+
+    max-width:900px;
+    margin:70px auto 120px;
+    padding:0 60px;
+
+}
+
+.contact-content h1{
+
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-weight:500;
+    margin-bottom:35px;
+
+}
+
+.contact-content p{
+
+    font-size:16px;
+    line-height:1.8;
+    color:#555;
+    max-width:520px;
+    margin-bottom:70px;
+
+}
+
+.contact-links{
+
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+
+}
+
+.contact-item h2{
+
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:12px;
+    font-weight:500;
+
+}
+
+.contact-item a{
+
+    font-size:16px;
+    color:#111;
+    text-decoration:none;
+
+    transition:opacity .3s ease;
+
+}
+
+.contact-item a:hover{
+
+    opacity:.6;
+
+}
+
+
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+footer{
+
+    max-width:1400px;
+    margin:120px auto 40px;
+    padding:0 60px;
+
+}
+
+footer p{
+
+    font-size:13px;
+    color:#777;
+
+}
+
+
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+@media(max-width:800px){
+
+.contact-page{
+
+padding:0 25px;
+
+}
+
+footer{
+
+padding:0 25px;
+
+}
+
+}
+
+.project-page{
+
+    max-width:1200px;
+    margin:70px auto 120px;
+    padding:0 60px;
+
+}
+
+
+.back-link{
+
+    text-decoration:none;
+    color:#666;
+    font-size:14px;
+    display:inline-block;
+    margin-bottom:70px;
+
+}
+
+
+.project-header{
+
+    margin-bottom:80px;
+
+}
+
+
+.project-header h1{
+
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    font-weight:500;
+    margin-bottom:25px;
+
+}
+
+
+.project-header p{
+
+    max-width:520px;
+    font-size:16px;
+    line-height:1.8;
+    color:#555;
+
+} 
+
+/* -------------------- */
+/* MASONRY GALLERY */
+/* -------------------- */
+
+
+.masonry-gallery {
+
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:40px;
+
+}
+
+
+.masonry-gallery img {
+
+    width:100%;
+    display:block;
+
+    transition:transform .4s ease;
+
+}
+
+
+.masonry-gallery img:hover {
+
+    transform:scale(1.015);
+
+}
+
+
+/* FEATURED ARTWORK */
+
+.masonry-gallery .featured {
+
+    grid-column:1 / -1;
+
+}
+
+
+.masonry-gallery img:hover {
+
+    transform:scale(1.015);
+
+}
+
+
+
+@media(max-width:800px){
+
+    .masonry-gallery{
+
+        column-count:1;
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+    .masonry-gallery{
+
+        column-count:1;
+
+    }
+
+}
+/* FEATURED ARTWORK */
+
+.featured-artwork {
+
+    width:100%;
+
+}
+/* ART DETAILS */
+
+
+.art-details {
+
+    margin-top:35px;
+    margin-bottom:60px;
+
+}
+
+
+.art-details p {
+
+    font-size:14px;
+    line-height:1.7;
+    color:#666;
+    margin-bottom:8px;
+    font-weight:400;
+
+}
+
+/* -------------------- */
+/* TRIPTYCH */
+/* -------------------- */
+
+
+/* -------------------- */
+/* TRIPTYCH */
+/* -------------------- */
+
+
+.triptych-section {
+
+    margin-top:120px;
+
+}
+
+
+.triptych-text {
+
+    max-width:680px;
+    margin-bottom:35px;
+
+}
+
+
+.triptych-text p {
+
+    font-size:16px;
+    line-height:1.8;
+    color:#444;
+
+}
+
+
+
+.triptych-gallery {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+
+}
+
+
+
+.triptych-gallery img {
+
+    width:30%;
+    height:auto;
+    display:block;
+
+}
+
+
+
+@media(max-width:800px){
+
+
+    .triptych-gallery{
+
+        flex-direction:column;
+
+    }
+
+
+    .triptych-gallery img{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+@media(max-width:800px){
+
+    .triptych-gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* -------------------- */
+/* INNER LANDSCAPE */
+/* -------------------- */
+
+
+.inner-landscape {
+
+    margin-top:150px;
+
+}
+
+
+
+.inner-text {
+
+    max-width:680px;
+    margin-bottom:35px;
+
+}
+
+
+
+.inner-text p {
+
+    font-size:16px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:20px;
+
+}
+
+
+
+.inner-main-image {
+
+    margin-bottom:60px;
+
+}
+
+
+.inner-main-image img {
+
+    width:100%;
+    display:block;
+
+}
+
+
+
+.inner-gallery {
+
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+
+}
+
+
+
+.inner-gallery img {
+
+    width:100%;
+    display:block;
+
+}
+
+
+
+@media(max-width:800px){
+
+
+    .inner-gallery {
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* -------------------- */
+/* GRAPHIC DESIGN PAGE */
+/* -------------------- */
+
+
+/* PROJECT INTRO */
+
+.project-page {
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+}
+
+
+.project-header {
+
+    max-width: 800px;
+    margin: 70px 0 120px;
+
+}
+
+
+.project-header h1 {
+
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+}
+
+
+.project-header p {
+
+    font-size:16px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:25px;
+
+}
+
+
+.project-header a {
+
+    color:#111;
+    text-decoration:none;
+
+}
+
+
+
+
+/* -------------------- */
+/* SECTIONS */
+/* -------------------- */
+
+
+.design-section + .design-section{
+
+    margin-top:140px;
+
+}
+
+
+
+.project-subtitle {
+
+    font-size:14px;
+    font-weight:500;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.section-description {
+
+    max-width:750px;
+
+    font-size:16px;
+    line-height:1.8;
+    color:#444;
+
+    margin-bottom:50px;
+
+}
+
+
+
+
+/* -------------------- */
+/* INSTAGRAM POSTS */
+/* -------------------- */
+
+
+.instagram-gallery {
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:35px;
+
+}
+
+
+.instagram-gallery img {
+
+    width:100%;
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+
+
+
+/* -------------------- */
+/* PROMOTIONAL MATERIALS */
+/* -------------------- */
+
+
+.materials-gallery {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+
+.materials-gallery img {
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+
+
+
+/* -------------------- */
+/* EXHIBITION BOOTH */
+/* -------------------- */
+
+
+.booth-gallery {
+
+    display:grid;
+    grid-template-columns: 0.7fr 0.7fr 1.3fr 1.3fr;
+    gap:25px;
+
+    align-items:start;
+
+}
+
+
+
+.booth-item {
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.booth-item img {
+
+    width:100%;
+    height:420px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+
+/* Roll-up più piccoli */
+
+.booth-item:nth-child(1) img,
+.booth-item:nth-child(2) img {
+
+    width:65%;
+    margin:0;
+
+}
+
+
+
+/* Didascalie */
+
+.image-caption {
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#555;
+
+}
+
+
+
+
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+
+@media(max-width:800px){
+
+
+.project-page {
+
+    padding:0 25px;
+
+}
+
+
+
+.project-header {
+
+    margin-top:50px;
+
+}
+
+
+
+.instagram-gallery {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.materials-gallery {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.booth-gallery {
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+/* -------------------- */
+/* PHOTOGRAPHY */
+/* -------------------- */
+
+
+.photo-gallery {
+
+    columns:3;
+
+    column-gap:25px;
+
+}
+
+
+
+.photo-gallery img {
+
+    width:100%;
+
+    display:block;
+
+    margin-bottom:25px;
+
+    break-inside:avoid;
+
+}
+
+
+
+@media(max-width:1000px){
+
+.photo-gallery {
+
+    columns:2;
+
+}
+
+}
+
+
+
+@media(max-width:800px){
+
+.photo-gallery {
+
+    columns:1;
+
+}
+
+}
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+
+footer {
+
+    margin-top:180px;
+
+    padding:40px 60px;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+/* -------------------- */
+/* JEWELLERY */
+/* -------------------- */
+
+
+.jewellery-gallery {
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+    margin-bottom:120px;
+
+}
+
+
+
+.jewellery-gallery img {
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+
+
+@media(max-width:800px){
+
+
+.jewellery-gallery {
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+/* -------------------- */
+/* LIGHTBOX */
+/* -------------------- */
+
+.lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    cursor:zoom-out;
+
+}
+
+
+.lightbox.active{
+
+    display:flex;
+
+}
+
+
+.lightbox-image{
+
+    max-width:90vw;
+
+    max-height:90vh;
+
+    object-fit:contain;
+
+}
+
+
+.close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:300;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+/* -------------------- */
+/* PRESENTATION DESIGN */
+/* -------------------- */
+
+.presentation-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:40px;
+
+    margin-bottom:120px;
+
+}
+
+.presentation-grid img{
+
+    width:100%;
+
+    display:block;
+
+    transition:transform .3s ease;
+
+}
+
+.presentation-grid img:hover{
+
+    transform:scale(1.01);
+
+}
+
+@media(max-width:800px){
+
+.presentation-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
